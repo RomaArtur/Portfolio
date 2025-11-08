@@ -1,117 +1,123 @@
+:root {
+  --cor-principal: #5b1f8b;
+  --cor-secundaria: #38df96;
+  --cor-terciaria: #310d4e;
 
-* {
-  margin: 0;
+  --cor-branca: #ffffff;
+  --cor-preta: #1c1b1d;
+
+  --font-family-main: "Poppins", sans-serif;
 }
 
 body {
-    margin: 0;    min-height: 100vh;
-    padding: 5vh 0;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: url('assets/img/img-fundo.png') center/cover no-repeat;
-    transition: background-color 0.3s, color 0.3s;
+  margin: 0;
+  min-height: 100vh;
+  padding: 5vh 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("assets/img/img-fundo.png") center/cover no-repeat;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .perfil {
-    overflow: hidden;
-    transform-origin: center;
-    background: #fff;
-    padding: 25px;
-    border-radius: 18px;
-    max-width: 400px;
-    width: 90%;
-    box-sizing: border-box;
-    transition: transform 0.3s, box-shadow 0.3s;
-    margin: 20px;
+  overflow: hidden;
+  transform-origin: center;
+  background: var(--cor-branca);
+  padding: 25px;
+  border-radius: 18px;
+  max-width: 400px;
+  width: 90%;
+  box-sizing: border-box;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 20px;
 }
 
-.perfil:hover{
-       box-shadow: 0 0 20px #ffffff;
+.perfil:hover {
+  box-shadow: 0 0 20px var(--cor-branca);
 }
 
 .perfil__imagem {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px;
-    border: 3px solid #310d4e;
-    border-radius: 50%;
-    object-fit: cover;
-    transition: border 0.3s, transform 0.3s, box-shadow 0.3s;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  border: 3px solid var(--cor-terciaria);
+  border-radius: 50%;
+  object-fit: cover;
+  transition: border 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
-
 .perfil__imagem:hover {
-    border-color: #38df96;
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #38df96;
+  border-color: var(--cor-secundaria);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--cor-secundaria);
 }
 
 .perfil__bio {
-    margin-bottom: 20px;
-    font-weight: 500;
-    transition: letter-spacing 0.3s, transform 0.3s;
+  margin-bottom: 20px;
+  font-weight: 500;
+  transition: letter-spacing 0.3s, transform 0.3s;
 }
 .perfil__bio:hover {
-    transform: scale(1.01);
-    letter-spacing: 1px;
+  transform: scale(1.01);
+  letter-spacing: 1px;
 }
 
 .perfil__botao,
 #modo__noturno {
-    all: unset;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 10px 0;
-    padding: 12px;
-    border-radius: 18px;
-    gap: 12px;
-    background: #5b1f8b;
-    color: #fff;
-    text-decoration: none;
-    box-sizing: border-box;
-    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 18px;
+  gap: 12px;
+  background: var(--cor-principal);
+  color: var(--cor-branca);
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 .perfil__botao:hover,
 #modo__noturno:hover {
-    background: #38df96;
-    color: #000;
-    transform: translateY(-2px);
+  background: var(--cor-secundaria);
+  color: var(--cor-preta);
+  transform: translateY(-2px);
 }
 
 body.dark .perfil {
-    background: #1c1b1d;
+  background: var(--cor-preta);
 }
 body.dark .perfil:hover {
-    box-shadow: 0 0 20px #1c1b1d;
+  box-shadow: 0 0 20px var(--cor-preta);
 }
 body.dark .perfil__nome,
 body.dark .perfil__bio {
-    color: #fff;
+  color: var(--cor-branca);
 }
 body.dark .perfil__imagem {
-    border-color: #38df96;
+  border-color: var(--cor-secundaria);
 }
 
 @media (max-width: 480px) {
   .perfil {
-    transform: scale(1.10);
+    transform: scale(1.1);
     padding: 30px 20px;
   }
 }
 
 @media (min-width: 1200px) {
   .perfil {
-    transform: scale(0.75); 
+    transform: scale(0.75);
   }
 }
 
 @media (min-width: 1600px) {
   .perfil {
-    transform: scale(1.0);
+    transform: scale(1);
   }
 }
