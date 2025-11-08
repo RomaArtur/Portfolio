@@ -2,7 +2,7 @@
   --cor-principal: #4703d1;
   --cor-secundaria: #d68bfe;
   --cor-terciaria: #27017d;
-  --cor-quaternaria: #C93EFE;
+  --cor-quaternaria: #c93efe;
 
   --cor-branca: #ffffff;
   --cor-preta: #1c1b1d;
@@ -30,13 +30,13 @@
 
 body {
   font-family: var(--font-family-main);
-  min-height: 100vh;
-  padding: 5vh 0;
+  height: 100vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 
   background: url("assets/img/img-fundo.png") center/cover no-repeat;
   transition: background-color 0.3s, color 0.3s;
