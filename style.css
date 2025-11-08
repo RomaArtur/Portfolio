@@ -56,10 +56,6 @@ body {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.perfil:hover {
-  box-shadow: 0 0 20px var(--cor-cinza-transparente);
-}
-
 .perfil__imagem {
   width: 200px;
   height: 200px;
@@ -70,21 +66,10 @@ body {
   transition: border 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
-.perfil__imagem:hover {
-  border-color: var(--cor-secundaria);
-  transform: scale(1.05);
-  box-shadow: 0 0 20px var(--cor-secundaria);
-}
-
 .perfil__bio {
   margin-bottom: 20px;
   font-weight: 500;
   transition: letter-spacing 0.3s, transform 0.3s;
-}
-
-.perfil__bio:hover {
-  transform: scale(1.01);
-  letter-spacing: 1px;
 }
 
 .perfil__botoes {
@@ -114,19 +99,8 @@ body {
   transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 
-.perfil__botao:hover,
-#modo__noturno:hover {
-  background: var(--cor-secundaria);
-  color: var(--cor-preta);
-  transform: translateY(-2px);
-}
-
 body.dark .perfil {
   background: var(--cor-preta);
-}
-
-body.dark .perfil:hover {
-  box-shadow: 0 0 20px var(--cor-preta);
 }
 
 body.dark .perfil__nome,
@@ -136,6 +110,36 @@ body.dark .perfil__bio {
 
 body.dark .perfil__imagem {
   border-color: var(--cor-secundaria);
+}
+
+@media (hover: hover) {
+
+    .perfil:hover {
+        box-shadow: 0 0 20px var(--cor-cinza-transparente);
+    }
+
+    .perfil__imagem:hover {
+        border-color: var(--cor-secundaria);
+        transform: scale(1.05);
+        box-shadow: 0 0 20px var(--cor-secundaria);
+    }
+
+    .perfil__bio:hover {
+        transform: scale(1.01);
+        letter-spacing: 1px;
+    }
+
+    .perfil__botao:hover,
+    .perfil__botao-alternar:hover {
+        background: var(--cor-quaternaria);
+        color: var(--cor-branca);
+        transform: translateY(-2px);
+    }
+
+    body.dark .perfil:hover {
+        box-shadow: 0 0 20px var(--cor-preta);
+    }
+
 }
 
 @media (max-width: 480px) {
