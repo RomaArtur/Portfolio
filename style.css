@@ -15,7 +15,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.container {
+.perfil {
     overflow: hidden;
     transform-origin: center;
     background: #fff;
@@ -28,11 +28,11 @@ body {
     margin: 20px;
 }
 
-.container:hover{
+.perfil:hover{
        box-shadow: 0 0 20px #ffffff;
 }
 
-.img-perfil {
+.perfil__imagem {
     width: 200px;
     height: 200px;
     margin-bottom: 20px;
@@ -43,23 +43,23 @@ body {
 }
 
 
-.img-perfil:hover {
+.perfil__imagem:hover {
     border-color: #38df96;
     transform: scale(1.05);
     box-shadow: 0 0 20px #38df96;
 }
 
-.bio {
+.perfil__bio {
     margin-bottom: 20px;
     font-weight: 500;
     transition: letter-spacing 0.3s, transform 0.3s;
 }
-.bio:hover {
+.perfil__bio:hover {
     transform: scale(1.01);
     letter-spacing: 1px;
 }
 
-.link-botao,
+.perfil__botao,
 #modo-noturno {
     all: unset;
     display: flex;
@@ -76,24 +76,24 @@ body {
     box-sizing: border-box;
     transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
-.link-botao:hover,
+.perfil__botao:hover,
 #modo-noturno:hover {
     background: #38df96;
     color: #000;
     transform: translateY(-2px);
 }
 
-body.dark .container {
+body.dark .perfil {
     background: #1c1b1d;
 }
-body.dark .container:hover {
+body.dark .perfil:hover {
     box-shadow: 0 0 20px #1c1b1d;
 }
-body.dark .nome,
-body.dark .bio {
+body.dark .perfil__nome,
+body.dark .perfil__bio {
     color: #fff;
 }
-body.dark .img-perfil {
+body.dark .perfil__imagem {
     border-color: #38df96;
 }
 
