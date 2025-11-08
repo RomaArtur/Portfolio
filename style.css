@@ -1,7 +1,8 @@
 :root {
-  --cor-principal: #5b1f8b;
-  --cor-secundaria: #38df96;
-  --cor-terciaria: #310d4e;
+  --cor-principal: #4703d1;
+  --cor-secundaria: #d68bfe;
+  --cor-terciaria: #27017d;
+  --cor-quaternaria: #C93EFE;
 
   --cor-branca: #ffffff;
   --cor-preta: #1c1b1d;
@@ -113,7 +114,7 @@ body {
 }
 
 .perfil__botao:hover,
-.perfil__botao-alternar {
+#modo__noturno:hover {
   background: var(--cor-secundaria);
   color: var(--cor-preta);
   transform: translateY(-2px);
