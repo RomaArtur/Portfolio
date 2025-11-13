@@ -1,6 +1,9 @@
+const path = require("path");
 const express = require("express");
 const app = express();
 const PORT = 4000;
+
+app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (request, response) => {
   response.send("Back-end funcionando.");
@@ -9,3 +12,4 @@ app.get("/", (request, response) => {
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
+
