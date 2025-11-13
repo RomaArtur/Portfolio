@@ -8,10 +8,11 @@ const PORT = 4000;
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/", (request, response) => {
-  response.send("Back-end funcionando.");
+app.get("/", (req, res) => {
+  res.send("Back-end funcionando.");
 });
 
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
+
