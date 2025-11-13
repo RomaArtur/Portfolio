@@ -113,33 +113,31 @@ body.dark .perfil__imagem {
 }
 
 @media (hover: hover) {
+  .perfil:hover {
+    box-shadow: 0 0 20px var(--cor-cinza-transparente);
+  }
 
-    .perfil:hover {
-        box-shadow: 0 0 20px var(--cor-cinza-transparente);
-    }
+  .perfil__imagem:hover {
+    border-color: var(--cor-secundaria);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--cor-secundaria);
+  }
 
-    .perfil__imagem:hover {
-        border-color: var(--cor-secundaria);
-        transform: scale(1.05);
-        box-shadow: 0 0 20px var(--cor-secundaria);
-    }
+  .perfil__bio:hover {
+    transform: scale(1.01);
+    letter-spacing: 1px;
+  }
 
-    .perfil__bio:hover {
-        transform: scale(1.01);
-        letter-spacing: 1px;
-    }
+  .perfil__botao:hover,
+  .perfil__botao-alternar:hover {
+    background: var(--cor-quaternaria);
+    color: var(--cor-branca);
+    transform: translateY(-2px);
+  }
 
-    .perfil__botao:hover,
-    .perfil__botao-alternar:hover {
-        background: var(--cor-quaternaria);
-        color: var(--cor-branca);
-        transform: translateY(-2px);
-    }
-
-    body.dark .perfil:hover {
-        box-shadow: 0 0 20px var(--cor-preta);
-    }
-
+  body.dark .perfil:hover {
+    box-shadow: 0 0 20px var(--cor-preta);
+  }
 }
 
 @media (max-width: 480px) {
